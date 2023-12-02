@@ -1,0 +1,414 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+#a {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+}
+
+#MCK img {
+  height: 50px;
+  width: 150px;
+}
+
+#titulo h1 {
+  text-align: center;
+}
+
+#botao {
+  text-align: center;
+  margin: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: url("baixados.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 2px 3px #888888;
+}
+
+#resultado {
+  display: block;
+  margin: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 2px 3px #888888;
+  border: 1px solid #888888;
+}
+
+#sei,
+#la {
+  padding: 10px 20px;
+  border: none;
+  color: #030303;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#la {
+  width: 50px;
+  height: 25px;
+  background-color: #424040;
+  color: white;
+  font-weight: bold;
+  padding: 5px 5px;
+  font-size: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.main-header {
+  display: flex;
+  height: 50px;
+  background-color: #e74c3c;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.main-header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.main-header p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.content {
+  padding-top: 70px;
+  border: 2px red solid;
+}
+
+footer {
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 15px;
+  bottom: 0;
+  left: 0;
+}
+
+footer p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+footer a {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  text-decoration: none;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+}
+.card-content {
+  padding: 16px;
+  height: 350px;
+  min-width: 100%;
+  box-shadow: 3px 2px #888888;
+  border: 1px solid #888888;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 1em;
+  width: 90%;
+  color: #555;
+}
+
+#controle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+#controle > div {
+  flex: 1 0 200px;
+  margin: 10px; 
+}
+
+@media (max-width: 10000px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  #a {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+  }
+  
+  #MCK img {
+    height: 50px;
+    width: 150px;
+  }
+  
+  #titulo h1 {
+    text-align: center;
+  }
+  
+  #botao {
+    text-align: center;
+    margin: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url("baixados.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 2px 3px #888888;
+  }
+  
+  #resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto; 
+    width: 80%;
+    border-radius: 50px;
+    box-shadow: 2px 3px #888888;
+    border: 1px solid #888888;
+    padding: 20px;
+  }
+  #resultado img{
+    margin-bottom: 20px;
+    border-radius: 20%;
+  }
+  #dis {
+    display: block;
+    margin: 25px auto; 
+    width: 250px;
+    text-align: center; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #888888;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  #sei,
+  #la {
+    padding: 10px 20px;
+    border: none;
+    color: #030303;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #la {
+    width: 50px;
+    height: 25px;
+    background-color: #424040;
+    color: white;
+    font-weight: bold;
+    padding: 5px 5px;
+    font-size: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .main-header {
+    display: flex;
+    height: auto;
+    background-color: #e74c3c;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #000;
+  }
+  
+  .main-header h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .main-header p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .content {
+    gap: 10px;
+    padding-top: 70px;
+    border: 2px red solid;
+  }
+  
+  footer {
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  footer p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  footer a {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  footer img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 16px 0;
+  }
+  .card-content {
+    padding: 16px;
+    height: 350px;
+    min-width: 100%;
+    box-shadow: 3px 2px #888888;
+    border: 1px solid #888888;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    width: 90%;
+    color: #555;
+  }
+  
+  #controle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #controle > div {
+    margin-bottom: 20px; 
+    width: 80%;
+  }
+  
+  .text-div {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #000;
+    font-size: 5vw;
+  }
+  .botao-voltar {
+    display: block;
+    padding: 10px 20px;
+    background-color: #383838;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    width: 300px;
+  }
+  .botao-voltar:hover {
+    background-color:#474747;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <title>Detecção de Doenças Pulmonares</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-content">
+        <h1>
+          Detecção Automática de COVID-19 e Pneumonia em Radiografias Torácicas Utilizando Aprendizado de Máquina
+        </h1>
+      </div>
+      <!-- <div id="MCK">
+      <img src="static\MCK_horizontal_vermelho.png" alt="aa">
+    </div> -->
+    </header>
+
+    <div id="a">
+      <div id="titulo">
+        <h1>Carregue uma imagem de RX-Torácica</h1>
+      </div>
+      <div id="botao">
+        <form
+          action="/predict"
+          id="form"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input type="file" name="image" id="sei" />
+          <input type="submit" value="Enviar" id="la" />
+        </form>
+      </div>
+    </div>
+
+    {% if result %}
+    <div id="resultado">
+      <h2>Resultado da Predição</h2>
+      <p>Predição: {{ result }}</p>
+      <p>Confiança: {{ confianca }}%</p>
+      <img src="{{ url_for('uploaded_file', filename=image_url) }}" width="400">
+      <a href="/" class="botao-voltar">Voltar para nova predição</a>
+    </div>
+    {% endif %}
+
+    <div id="dis">
+      <h1>Para saber mais sobre o projeto!</h1>
+    <form action="/descricao" method="get">
+      <input type="submit" value="Carregue uma imagem de raio-X de pulmão" id="la" />
+    </form>
+  </div>
+  </body>
+  <footer>
+    <p>
+      <a href="https://github.com/JoaoB195Ramos">
+        <img src="static/git.png" />
+        João Pedro Ramos</a
+      >
+      <a href="https://github.com/LucasT0nin">
+        <img src="static/git.png" />
+        Lucas Tonin</a
+      >
+      <a href="https://github.com/VictorCostaNova">
+        <img src="static/git.png" />
+        Victor Costa</a
+      >
+    </p>
+  </footer>
+</html>
