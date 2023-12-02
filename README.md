@@ -1,5 +1,6 @@
-# COVID-19Pneumoniadetection_deeplearning
-Detecção Automática de COVID-19 e Pneumonia em Radiografias Torácicas Utilizando Redes Neurais Profundas
+# Detecção Automática de COVID-19 e Pneumonia em Radiografias Torácicas Utilizando Redes Neurais Profundas
+
+João P. Bianchini, Lucas T. Leite, Victor C. Nova
 
 Este trabalho tem como objetivo implementar um modelo de detecção automática de COVID-19 e Pneumonia por meio de radiografias torácicas, utilizando técnicas de redes neurais profundas. A partir de um dataset público de imagens radiográficas torácicas de pacientes com COVID-19, pneumonia e normal, foram utilizadas redes neurais convolucionais explorando variações nos seus hiperparâmetros para encontrar o melhor modelo preditivo segundo métricas de avaliação de erro. O modelo definitivo obtido incorporou 9.568 imagens de treinamento, alcançando uma acurácia média de 94% e precisão de 97%. A partir disso, uma aplicação web simples foi desenvolvida para integração do classificador e facilitando o seu acesso.
 
