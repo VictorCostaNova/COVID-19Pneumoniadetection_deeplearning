@@ -7,3 +7,6 @@ Este trabalho tem como objetivo implementar um modelo de detecção automática 
 
 
 This work aims to implement an automatic detection model for COVID-19 and pneumonia through chest X-rays, using deep neural network techniques. Leveraging a public dataset of chest X-ray images from patients with COVID-19, pneumonia, and normal cases, convolutional neural networks were employed, exploring variations in their hyperparameters to find the best predictive model based on error evaluation metrics. The final model incorporated 9,568 training images, achieving an average accuracy of 94% and precision of 97%. Subsequently, a web application was developed for integrating the classifier, making it easily accessible.
+
+Link do Roboflow: https://app.roboflow.com/cnn-80ubc/deteccao-covid19-cnn/deploy/12
+Repositório: https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
